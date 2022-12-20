@@ -1,9 +1,10 @@
 cmake_minimum_required(VERSION 3.10)
 project(cda LANGUAGES C CXX VERSION 0.1.0)
 
+file(GLOB_RECURSE SOURCES RELATIVE ${CMAKE_SOURCE_DIR} "src/*.c" "include/*.h")
+
 add_library(cda SHARED
-        src/search.c
-        include/search.h
+            ${SOURCES}
         )
 
 target_include_directories(cda
