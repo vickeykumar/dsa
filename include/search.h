@@ -12,6 +12,6 @@ int LinearSearch(int *arr, int size, int item);
  * else returns -1
  * Note: assume array is sorted
  */
-int BinarySearch(int *arr, int size, int item);
+extern int BinarySearch(int *arr, int size, int item);
 
 #endif

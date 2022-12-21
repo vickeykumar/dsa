@@ -184,11 +184,11 @@ CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 //Value Computed by CMake
 cda_BINARY_DIR:STATIC=/root/ds/dsa
 
-//Dependencies for target
-cda_LIB_DEPENDS:STATIC=
-
 //Value Computed by CMake
 cda_SOURCE_DIR:STATIC=/root/ds/dsa
+
+//Dependencies for target
+dsa_LIB_DEPENDS:STATIC=
 
 
 ########################

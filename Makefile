@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named cda
+# Target rules for targets named dsa
 
 # Build rule for target.
-cda: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 cda
-.PHONY : cda
+dsa: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 dsa
+.PHONY : dsa
 
 # fast build rule for target.
-cda/fast:
-	$(MAKE) -f CMakeFiles/cda.dir/build.make CMakeFiles/cda.dir/build
-.PHONY : cda/fast
+dsa/fast:
+	$(MAKE) -f CMakeFiles/dsa.dir/build.make CMakeFiles/dsa.dir/build
+.PHONY : dsa/fast
 
 src/search.o: src/search.c.o
 
@@ -129,7 +129,7 @@ src/search.o: src/search.c.o
 
 # target to build an object file
 src/search.c.o:
-	$(MAKE) -f CMakeFiles/cda.dir/build.make CMakeFiles/cda.dir/src/search.c.o
+	$(MAKE) -f CMakeFiles/dsa.dir/build.make CMakeFiles/dsa.dir/src/search.c.o
 .PHONY : src/search.c.o
 
 src/search.i: src/search.c.i
@@ -138,7 +138,7 @@ src/search.i: src/search.c.i
 
 # target to preprocess a source file
 src/search.c.i:
-	$(MAKE) -f CMakeFiles/cda.dir/build.make CMakeFiles/cda.dir/src/search.c.i
+	$(MAKE) -f CMakeFiles/dsa.dir/build.make CMakeFiles/dsa.dir/src/search.c.i
 .PHONY : src/search.c.i
 
 src/search.s: src/search.c.s
@@ -147,7 +147,7 @@ src/search.s: src/search.c.s
 
 # target to generate assembly for a file
 src/search.c.s:
-	$(MAKE) -f CMakeFiles/cda.dir/build.make CMakeFiles/cda.dir/src/search.c.s
+	$(MAKE) -f CMakeFiles/dsa.dir/build.make CMakeFiles/dsa.dir/src/search.c.s
 .PHONY : src/search.c.s
 
 src/sort.o: src/sort.c.o
@@ -156,7 +156,7 @@ src/sort.o: src/sort.c.o
 
 # target to build an object file
 src/sort.c.o:
-	$(MAKE) -f CMakeFiles/cda.dir/build.make CMakeFiles/cda.dir/src/sort.c.o
+	$(MAKE) -f CMakeFiles/dsa.dir/build.make CMakeFiles/dsa.dir/src/sort.c.o
 .PHONY : src/sort.c.o
 
 src/sort.i: src/sort.c.i
@@ -165,7 +165,7 @@ src/sort.i: src/sort.c.i
 
 # target to preprocess a source file
 src/sort.c.i:
-	$(MAKE) -f CMakeFiles/cda.dir/build.make CMakeFiles/cda.dir/src/sort.c.i
+	$(MAKE) -f CMakeFiles/dsa.dir/build.make CMakeFiles/dsa.dir/src/sort.c.i
 .PHONY : src/sort.c.i
 
 src/sort.s: src/sort.c.s
@@ -174,7 +174,7 @@ src/sort.s: src/sort.c.s
 
 # target to generate assembly for a file
 src/sort.c.s:
-	$(MAKE) -f CMakeFiles/cda.dir/build.make CMakeFiles/cda.dir/src/sort.c.s
+	$(MAKE) -f CMakeFiles/dsa.dir/build.make CMakeFiles/dsa.dir/src/sort.c.s
 .PHONY : src/sort.c.s
 
 # Help Target
@@ -184,7 +184,7 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... cda"
+	@echo "... dsa"
 	@echo "... edit_cache"
 	@echo "... src/search.o"
 	@echo "... src/search.i"
