@@ -123,6 +123,60 @@ dsa/fast:
 	$(MAKE) -f CMakeFiles/dsa.dir/build.make CMakeFiles/dsa.dir/build
 .PHONY : dsa/fast
 
+src/common.o: src/common.c.o
+
+.PHONY : src/common.o
+
+# target to build an object file
+src/common.c.o:
+	$(MAKE) -f CMakeFiles/dsa.dir/build.make CMakeFiles/dsa.dir/src/common.c.o
+.PHONY : src/common.c.o
+
+src/common.i: src/common.c.i
+
+.PHONY : src/common.i
+
+# target to preprocess a source file
+src/common.c.i:
+	$(MAKE) -f CMakeFiles/dsa.dir/build.make CMakeFiles/dsa.dir/src/common.c.i
+.PHONY : src/common.c.i
+
+src/common.s: src/common.c.s
+
+.PHONY : src/common.s
+
+# target to generate assembly for a file
+src/common.c.s:
+	$(MAKE) -f CMakeFiles/dsa.dir/build.make CMakeFiles/dsa.dir/src/common.c.s
+.PHONY : src/common.c.s
+
+src/llist.o: src/llist.c.o
+
+.PHONY : src/llist.o
+
+# target to build an object file
+src/llist.c.o:
+	$(MAKE) -f CMakeFiles/dsa.dir/build.make CMakeFiles/dsa.dir/src/llist.c.o
+.PHONY : src/llist.c.o
+
+src/llist.i: src/llist.c.i
+
+.PHONY : src/llist.i
+
+# target to preprocess a source file
+src/llist.c.i:
+	$(MAKE) -f CMakeFiles/dsa.dir/build.make CMakeFiles/dsa.dir/src/llist.c.i
+.PHONY : src/llist.c.i
+
+src/llist.s: src/llist.c.s
+
+.PHONY : src/llist.s
+
+# target to generate assembly for a file
+src/llist.c.s:
+	$(MAKE) -f CMakeFiles/dsa.dir/build.make CMakeFiles/dsa.dir/src/llist.c.s
+.PHONY : src/llist.c.s
+
 src/search.o: src/search.c.o
 
 .PHONY : src/search.o
@@ -186,6 +240,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... dsa"
 	@echo "... edit_cache"
+	@echo "... src/common.o"
+	@echo "... src/common.i"
+	@echo "... src/common.s"
+	@echo "... src/llist.o"
+	@echo "... src/llist.i"
+	@echo "... src/llist.s"
 	@echo "... src/search.o"
 	@echo "... src/search.i"
 	@echo "... src/search.s"

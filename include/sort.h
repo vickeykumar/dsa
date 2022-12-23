@@ -22,5 +22,5 @@ void randomized_quick_sort(int *arr, int low, int high);
 
 /* merge 2 sorted array using in place sorting */
 void merge(int *arr, int low, int mid, int high);
-
+void merge_sort(int *arr, int low, int high);
 #endif
