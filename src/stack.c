@@ -15,18 +15,23 @@ void stack_destroy(stack *s) {
     free(s->list);
 }
 
+/*
+ * pushing to head of ll, so that pop can be O(1)
+*/
 void stack_push(stack *s, void *data) {
-    llist_append(s->list, data);
+    llist_prepend(s->list, data);
 }
+
+/* stack pop O(1) */
 
 void stack_pop(stack *s, void *data) {
     assert(stack_size(s) > 0);
-    llist_tail(s->list, data, true); 
+    llist_head(s->list, data, true); 
 }
-
+/* stack peek O(1) */
 void stack_peek(stack *s, void *data) {
     assert(stack_size(s) > 0);
-    llist_tail(s->list, data, false);
+    llist_head(s->list, data, false);
 }
 
 int stack_size(stack *s) { return llist_size(s->list); }
