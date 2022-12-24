@@ -114,6 +114,8 @@ void llist_head(llist *listhdl, void *data, bool removeFromList) {
             free(tmp);
             tmp=NULL;
             listhdl->length--;
+            listhdl->head=head;
+            if(llist_size(listhdl) == 0) listhdl->tail=head;
         }
     }
 }
@@ -128,13 +130,15 @@ void llist_tail(llist *listhdl, void *data, bool removeFromList) {
     else {
         memcpy(data, tail->data, listhdl->dataSize);
         if (removeFromList) {
-            while (head->next != tail) head=head->next;
+            while (head->next != tail && head->next !=NULL) head=head->next;
             llNode *tmp = tail;
             head->next=NULL;
             if (listhdl->freeFn) listhdl->freeFn(tmp->data);
             free(tmp);
             tmp=NULL;
             listhdl->length--;
+            listhdl->tail=head; // update the tail to previous node
+            if(llist_size(listhdl) == 0) { listhdl->head=NULL; listhdl->tail=NULL;}
         }
     }
 }
