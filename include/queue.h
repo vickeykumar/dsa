@@ -22,6 +22,7 @@ void queue_peek(queue *q, void *data);
 
 int queue_size(queue *q);
 
+bool queue_isEmpty(queue *q);
 /*
 iterate over all the elements of the queue using the iterate function, 
 that recieves the data as void ptr(needs typecast to desired datatype.)

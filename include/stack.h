@@ -22,6 +22,7 @@ void stack_peek(stack *s, void *data);
 
 int stack_size(stack *s);
 
+bool stack_isEmpty(stack *s);
 /*
 iterate over all the elements of the stack using the iterate function, 
 that recieves the data as void ptr(needs typecast to desired datatype.)

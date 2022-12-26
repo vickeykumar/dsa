@@ -123,6 +123,33 @@ dsa/fast:
 	$(MAKE) -f CMakeFiles/dsa.dir/build.make CMakeFiles/dsa.dir/build
 .PHONY : dsa/fast
 
+src/Hashes.o: src/Hashes.c.o
+
+.PHONY : src/Hashes.o
+
+# target to build an object file
+src/Hashes.c.o:
+	$(MAKE) -f CMakeFiles/dsa.dir/build.make CMakeFiles/dsa.dir/src/Hashes.c.o
+.PHONY : src/Hashes.c.o
+
+src/Hashes.i: src/Hashes.c.i
+
+.PHONY : src/Hashes.i
+
+# target to preprocess a source file
+src/Hashes.c.i:
+	$(MAKE) -f CMakeFiles/dsa.dir/build.make CMakeFiles/dsa.dir/src/Hashes.c.i
+.PHONY : src/Hashes.c.i
+
+src/Hashes.s: src/Hashes.c.s
+
+.PHONY : src/Hashes.s
+
+# target to generate assembly for a file
+src/Hashes.c.s:
+	$(MAKE) -f CMakeFiles/dsa.dir/build.make CMakeFiles/dsa.dir/src/Hashes.c.s
+.PHONY : src/Hashes.c.s
+
 src/common.o: src/common.c.o
 
 .PHONY : src/common.o
@@ -149,6 +176,33 @@ src/common.s: src/common.c.s
 src/common.c.s:
 	$(MAKE) -f CMakeFiles/dsa.dir/build.make CMakeFiles/dsa.dir/src/common.c.s
 .PHONY : src/common.c.s
+
+src/hashmap.o: src/hashmap.c.o
+
+.PHONY : src/hashmap.o
+
+# target to build an object file
+src/hashmap.c.o:
+	$(MAKE) -f CMakeFiles/dsa.dir/build.make CMakeFiles/dsa.dir/src/hashmap.c.o
+.PHONY : src/hashmap.c.o
+
+src/hashmap.i: src/hashmap.c.i
+
+.PHONY : src/hashmap.i
+
+# target to preprocess a source file
+src/hashmap.c.i:
+	$(MAKE) -f CMakeFiles/dsa.dir/build.make CMakeFiles/dsa.dir/src/hashmap.c.i
+.PHONY : src/hashmap.c.i
+
+src/hashmap.s: src/hashmap.c.s
+
+.PHONY : src/hashmap.s
+
+# target to generate assembly for a file
+src/hashmap.c.s:
+	$(MAKE) -f CMakeFiles/dsa.dir/build.make CMakeFiles/dsa.dir/src/hashmap.c.s
+.PHONY : src/hashmap.c.s
 
 src/llist.o: src/llist.c.o
 
@@ -294,9 +348,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... dsa"
 	@echo "... edit_cache"
+	@echo "... src/Hashes.o"
+	@echo "... src/Hashes.i"
+	@echo "... src/Hashes.s"
 	@echo "... src/common.o"
 	@echo "... src/common.i"
 	@echo "... src/common.s"
+	@echo "... src/hashmap.o"
+	@echo "... src/hashmap.i"
+	@echo "... src/hashmap.s"
 	@echo "... src/llist.o"
 	@echo "... src/llist.i"
 	@echo "... src/llist.s"
