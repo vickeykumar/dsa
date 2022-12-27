@@ -35,6 +35,6 @@ void hashmap_delete(hashmap* m, const char *key);
 */
 int hashmap_find(hashmap* m, const char *key, void *data);
 
-void hashmap_for_each(hashmap *m, iterator ll_iterator);
+void hashmap_for_each(hashmap *m, iterator h_iterator);
 
 #endif

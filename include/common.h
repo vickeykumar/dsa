@@ -9,5 +9,6 @@ typedef ds_size_t (*hashFunction)(const void* key, int keySize, ds_size_t seed);
 
 typedef void (*iterator)(void *);
 void display_int(void *data);
+void swap_int(int *arr, int i, int j);
 
 #endif

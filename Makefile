@@ -204,6 +204,33 @@ src/hashmap.c.s:
 	$(MAKE) -f CMakeFiles/dsa.dir/build.make CMakeFiles/dsa.dir/src/hashmap.c.s
 .PHONY : src/hashmap.c.s
 
+src/heapsort.o: src/heapsort.c.o
+
+.PHONY : src/heapsort.o
+
+# target to build an object file
+src/heapsort.c.o:
+	$(MAKE) -f CMakeFiles/dsa.dir/build.make CMakeFiles/dsa.dir/src/heapsort.c.o
+.PHONY : src/heapsort.c.o
+
+src/heapsort.i: src/heapsort.c.i
+
+.PHONY : src/heapsort.i
+
+# target to preprocess a source file
+src/heapsort.c.i:
+	$(MAKE) -f CMakeFiles/dsa.dir/build.make CMakeFiles/dsa.dir/src/heapsort.c.i
+.PHONY : src/heapsort.c.i
+
+src/heapsort.s: src/heapsort.c.s
+
+.PHONY : src/heapsort.s
+
+# target to generate assembly for a file
+src/heapsort.c.s:
+	$(MAKE) -f CMakeFiles/dsa.dir/build.make CMakeFiles/dsa.dir/src/heapsort.c.s
+.PHONY : src/heapsort.c.s
+
 src/llist.o: src/llist.c.o
 
 .PHONY : src/llist.o
@@ -230,6 +257,33 @@ src/llist.s: src/llist.c.s
 src/llist.c.s:
 	$(MAKE) -f CMakeFiles/dsa.dir/build.make CMakeFiles/dsa.dir/src/llist.c.s
 .PHONY : src/llist.c.s
+
+src/priorityqueue.o: src/priorityqueue.c.o
+
+.PHONY : src/priorityqueue.o
+
+# target to build an object file
+src/priorityqueue.c.o:
+	$(MAKE) -f CMakeFiles/dsa.dir/build.make CMakeFiles/dsa.dir/src/priorityqueue.c.o
+.PHONY : src/priorityqueue.c.o
+
+src/priorityqueue.i: src/priorityqueue.c.i
+
+.PHONY : src/priorityqueue.i
+
+# target to preprocess a source file
+src/priorityqueue.c.i:
+	$(MAKE) -f CMakeFiles/dsa.dir/build.make CMakeFiles/dsa.dir/src/priorityqueue.c.i
+.PHONY : src/priorityqueue.c.i
+
+src/priorityqueue.s: src/priorityqueue.c.s
+
+.PHONY : src/priorityqueue.s
+
+# target to generate assembly for a file
+src/priorityqueue.c.s:
+	$(MAKE) -f CMakeFiles/dsa.dir/build.make CMakeFiles/dsa.dir/src/priorityqueue.c.s
+.PHONY : src/priorityqueue.c.s
 
 src/queue.o: src/queue.c.o
 
@@ -357,9 +411,15 @@ help:
 	@echo "... src/hashmap.o"
 	@echo "... src/hashmap.i"
 	@echo "... src/hashmap.s"
+	@echo "... src/heapsort.o"
+	@echo "... src/heapsort.i"
+	@echo "... src/heapsort.s"
 	@echo "... src/llist.o"
 	@echo "... src/llist.i"
 	@echo "... src/llist.s"
+	@echo "... src/priorityqueue.o"
+	@echo "... src/priorityqueue.i"
+	@echo "... src/priorityqueue.s"
 	@echo "... src/queue.o"
 	@echo "... src/queue.i"
 	@echo "... src/queue.s"
