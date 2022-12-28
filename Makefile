@@ -150,6 +150,33 @@ src/Hashes.c.s:
 	$(MAKE) -f CMakeFiles/dsa.dir/build.make CMakeFiles/dsa.dir/src/Hashes.c.s
 .PHONY : src/Hashes.c.s
 
+src/avltree.o: src/avltree.c.o
+
+.PHONY : src/avltree.o
+
+# target to build an object file
+src/avltree.c.o:
+	$(MAKE) -f CMakeFiles/dsa.dir/build.make CMakeFiles/dsa.dir/src/avltree.c.o
+.PHONY : src/avltree.c.o
+
+src/avltree.i: src/avltree.c.i
+
+.PHONY : src/avltree.i
+
+# target to preprocess a source file
+src/avltree.c.i:
+	$(MAKE) -f CMakeFiles/dsa.dir/build.make CMakeFiles/dsa.dir/src/avltree.c.i
+.PHONY : src/avltree.c.i
+
+src/avltree.s: src/avltree.c.s
+
+.PHONY : src/avltree.s
+
+# target to generate assembly for a file
+src/avltree.c.s:
+	$(MAKE) -f CMakeFiles/dsa.dir/build.make CMakeFiles/dsa.dir/src/avltree.c.s
+.PHONY : src/avltree.c.s
+
 src/common.o: src/common.c.o
 
 .PHONY : src/common.o
@@ -405,6 +432,9 @@ help:
 	@echo "... src/Hashes.o"
 	@echo "... src/Hashes.i"
 	@echo "... src/Hashes.s"
+	@echo "... src/avltree.o"
+	@echo "... src/avltree.i"
+	@echo "... src/avltree.s"
 	@echo "... src/common.o"
 	@echo "... src/common.i"
 	@echo "... src/common.s"
