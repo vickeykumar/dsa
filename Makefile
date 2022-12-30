@@ -204,6 +204,33 @@ src/common.c.s:
 	$(MAKE) -f CMakeFiles/dsa.dir/build.make CMakeFiles/dsa.dir/src/common.c.s
 .PHONY : src/common.c.s
 
+src/graph_adjlist.o: src/graph_adjlist.c.o
+
+.PHONY : src/graph_adjlist.o
+
+# target to build an object file
+src/graph_adjlist.c.o:
+	$(MAKE) -f CMakeFiles/dsa.dir/build.make CMakeFiles/dsa.dir/src/graph_adjlist.c.o
+.PHONY : src/graph_adjlist.c.o
+
+src/graph_adjlist.i: src/graph_adjlist.c.i
+
+.PHONY : src/graph_adjlist.i
+
+# target to preprocess a source file
+src/graph_adjlist.c.i:
+	$(MAKE) -f CMakeFiles/dsa.dir/build.make CMakeFiles/dsa.dir/src/graph_adjlist.c.i
+.PHONY : src/graph_adjlist.c.i
+
+src/graph_adjlist.s: src/graph_adjlist.c.s
+
+.PHONY : src/graph_adjlist.s
+
+# target to generate assembly for a file
+src/graph_adjlist.c.s:
+	$(MAKE) -f CMakeFiles/dsa.dir/build.make CMakeFiles/dsa.dir/src/graph_adjlist.c.s
+.PHONY : src/graph_adjlist.c.s
+
 src/hashmap.o: src/hashmap.c.o
 
 .PHONY : src/hashmap.o
@@ -438,6 +465,9 @@ help:
 	@echo "... src/common.o"
 	@echo "... src/common.i"
 	@echo "... src/common.s"
+	@echo "... src/graph_adjlist.o"
+	@echo "... src/graph_adjlist.i"
+	@echo "... src/graph_adjlist.s"
 	@echo "... src/hashmap.o"
 	@echo "... src/hashmap.i"
 	@echo "... src/hashmap.s"
