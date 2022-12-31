@@ -6,6 +6,7 @@
 #include "stack.h"
 
 void stack_new(stack *s, int dataSize, freeFunction freeFn) {
+    if (!s) s = (stack*)malloc(sizeof(stack));
     s->list = (llist*)malloc(sizeof(llist));
     llist_new(s->list, dataSize, freeFn);
 }

@@ -4,6 +4,7 @@
 #include "queue.h"
 
 void queue_new(queue *q, int dataSize, freeFunction freeFn) {
+    if (!q) q=(queue*)malloc(sizeof(queue));
     q->list = (llist*)malloc(sizeof(llist));
     llist_new(q->list, dataSize, freeFn);
 }

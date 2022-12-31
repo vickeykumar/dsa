@@ -231,6 +231,60 @@ src/graph_adjlist.c.s:
 	$(MAKE) -f CMakeFiles/dsa.dir/build.make CMakeFiles/dsa.dir/src/graph_adjlist.c.s
 .PHONY : src/graph_adjlist.c.s
 
+src/graph_adjm.o: src/graph_adjm.c.o
+
+.PHONY : src/graph_adjm.o
+
+# target to build an object file
+src/graph_adjm.c.o:
+	$(MAKE) -f CMakeFiles/dsa.dir/build.make CMakeFiles/dsa.dir/src/graph_adjm.c.o
+.PHONY : src/graph_adjm.c.o
+
+src/graph_adjm.i: src/graph_adjm.c.i
+
+.PHONY : src/graph_adjm.i
+
+# target to preprocess a source file
+src/graph_adjm.c.i:
+	$(MAKE) -f CMakeFiles/dsa.dir/build.make CMakeFiles/dsa.dir/src/graph_adjm.c.i
+.PHONY : src/graph_adjm.c.i
+
+src/graph_adjm.s: src/graph_adjm.c.s
+
+.PHONY : src/graph_adjm.s
+
+# target to generate assembly for a file
+src/graph_adjm.c.s:
+	$(MAKE) -f CMakeFiles/dsa.dir/build.make CMakeFiles/dsa.dir/src/graph_adjm.c.s
+.PHONY : src/graph_adjm.c.s
+
+src/graph_traversal.o: src/graph_traversal.c.o
+
+.PHONY : src/graph_traversal.o
+
+# target to build an object file
+src/graph_traversal.c.o:
+	$(MAKE) -f CMakeFiles/dsa.dir/build.make CMakeFiles/dsa.dir/src/graph_traversal.c.o
+.PHONY : src/graph_traversal.c.o
+
+src/graph_traversal.i: src/graph_traversal.c.i
+
+.PHONY : src/graph_traversal.i
+
+# target to preprocess a source file
+src/graph_traversal.c.i:
+	$(MAKE) -f CMakeFiles/dsa.dir/build.make CMakeFiles/dsa.dir/src/graph_traversal.c.i
+.PHONY : src/graph_traversal.c.i
+
+src/graph_traversal.s: src/graph_traversal.c.s
+
+.PHONY : src/graph_traversal.s
+
+# target to generate assembly for a file
+src/graph_traversal.c.s:
+	$(MAKE) -f CMakeFiles/dsa.dir/build.make CMakeFiles/dsa.dir/src/graph_traversal.c.s
+.PHONY : src/graph_traversal.c.s
+
 src/hashmap.o: src/hashmap.c.o
 
 .PHONY : src/hashmap.o
@@ -468,6 +522,12 @@ help:
 	@echo "... src/graph_adjlist.o"
 	@echo "... src/graph_adjlist.i"
 	@echo "... src/graph_adjlist.s"
+	@echo "... src/graph_adjm.o"
+	@echo "... src/graph_adjm.i"
+	@echo "... src/graph_adjm.s"
+	@echo "... src/graph_traversal.o"
+	@echo "... src/graph_traversal.i"
+	@echo "... src/graph_traversal.s"
 	@echo "... src/hashmap.o"
 	@echo "... src/hashmap.i"
 	@echo "... src/hashmap.s"

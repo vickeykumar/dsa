@@ -1,5 +1,5 @@
-#ifndef __DSA_STACK_H
-#define __DSA_STACK_H
+#ifndef __DSA_QUEUE_H
+#define __DSA_QUEUE_H
 
 #include "common.h"
 #include "llist.h"

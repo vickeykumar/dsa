@@ -4,7 +4,7 @@
 #include "common.h"
 #include "llist.h"
 
-typedef struct {
+typedef struct stack {
   llist *list;
 } stack;
 
