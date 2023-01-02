@@ -18,7 +18,7 @@ typedef Graph digraph;
 
 // Create a new graph with n nodes
 Graph* createGraph(int n);
-
+Graph* createGraph_m(int **adjm, int V);
 // Add an edge from node u to node v, and v to u as it is undirected
 void addEdge(Graph* graph, int u, int v);
 
@@ -29,6 +29,8 @@ int* get_adjacent(Graph* graph, int u);
  * debian: apt install libgraph-easy-perl 
  */
 void printGraph(Graph* graph);
+
+int get_edge(Graph* graph, int u, int v);
 
 // Create a new graph with n nodes
 digraph* creatediGraph(int n);
@@ -45,6 +47,6 @@ int* get_adjacent_digraph(digraph* graph, int u);
 void printdiGraph(digraph* graph);
 
 int get_numNodes(digraph* graph);
-
+int digraph_get_edge(digraph* graph, int u, int v);
 #endif
 

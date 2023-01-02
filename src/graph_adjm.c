@@ -20,8 +20,20 @@ Graph* createGraph(int n) {
   return graph;
 }
 
+/*
+ * creates the graph given adjacency matrix and num of vertices
+ * assuming memory is already allocated for adjm
+ */
+Graph* createGraph_m(int **adjm, int V) {
+    Graph* graph = (Graph*)malloc(sizeof(Graph));
+    graph->numNodes = V;
+    graph->adjMatrix = adjm;
+    return graph;
+}
+
 // Add an edge from node u to node v, and v to u as it is undirected
 void addEdge(Graph* graph, int u, int v) {
+  assert( u<graph->numNodes && v<graph->numNodes );
   graph->adjMatrix[u][v] = 1;
 
   // add v to u
@@ -32,6 +44,8 @@ int* get_adjacent(Graph* graph, int u) {
     // iterate and check for non-zero for adjacent nodes
     return graph->adjMatrix[u];
 }
+
+int get_edge(Graph* graph, int u, int v) { return graph->adjMatrix[u][v]; }
 
 /* Print the adjacency list for each node in the graph
  * uses dot format, prints ascii or boxart if graph-easy is installed,
@@ -50,7 +64,7 @@ void printGraph(Graph* graph) {
     char e[100]; 
     for (int j=i; j<graph->numNodes; j++) { // traverse diagonally, as undirected
       if (graph->adjMatrix[i][j]) {
-          snprintf(e, 100, "\t%d -- %d;\n",i, j);
+          snprintf(e, 100, "\t%d -- %d [label=%d];\n",i, j, graph->adjMatrix[i][j]);
           capacity += strlen(e);
           r_str = (char*)realloc(r_str, (capacity+1)*sizeof(char));
           assert(r_str!=NULL);
@@ -88,8 +102,20 @@ digraph* creatediGraph(int n) {
   return graph;
 }
 
+/*
+ * creates a digraph given adjacency matrix and num of vertices
+ * assuming memory is already allocated for adjm
+ */
+digraph* createdigraph_m(int **adjm, int V) {
+    digraph* graph = (digraph*)malloc(sizeof(digraph));
+    graph->numNodes = V;
+    graph->adjMatrix = adjm;
+    return graph;
+}
+
 // Add an edge from node u to node v
 void addEdge_diGraph(digraph* graph, int u, int v) {
+  assert( u<graph->numNodes && v<graph->numNodes );
   graph->adjMatrix[u][v] = 1;
 
 }
@@ -121,7 +147,7 @@ void printdiGraph(digraph* graph) {
     char e[100]; 
     for (int j=0; j<graph->numNodes; j++) {
       if (graph->adjMatrix[i][j]) {
-          snprintf(e, 100, "\t%d -> %d;\n",i, j);
+          snprintf(e, 100, "\t%d -> %d [label=%d];\n",i, j, graph->adjMatrix[i][j]);
           capacity += strlen(e);
           r_str = (char*)realloc(r_str, (capacity+1)*sizeof(char));
           assert(r_str!=NULL);
@@ -146,7 +172,7 @@ void printdiGraph(digraph* graph) {
   cmd = NULL;
 }
 
-
+int digraph_get_edge(digraph* graph, int u, int v) { return graph->adjMatrix[u][v]; }
 
 
 

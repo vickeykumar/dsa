@@ -204,6 +204,33 @@ src/common.c.s:
 	$(MAKE) -f CMakeFiles/dsa.dir/build.make CMakeFiles/dsa.dir/src/common.c.s
 .PHONY : src/common.c.s
 
+src/dsf.o: src/dsf.c.o
+
+.PHONY : src/dsf.o
+
+# target to build an object file
+src/dsf.c.o:
+	$(MAKE) -f CMakeFiles/dsa.dir/build.make CMakeFiles/dsa.dir/src/dsf.c.o
+.PHONY : src/dsf.c.o
+
+src/dsf.i: src/dsf.c.i
+
+.PHONY : src/dsf.i
+
+# target to preprocess a source file
+src/dsf.c.i:
+	$(MAKE) -f CMakeFiles/dsa.dir/build.make CMakeFiles/dsa.dir/src/dsf.c.i
+.PHONY : src/dsf.c.i
+
+src/dsf.s: src/dsf.c.s
+
+.PHONY : src/dsf.s
+
+# target to generate assembly for a file
+src/dsf.c.s:
+	$(MAKE) -f CMakeFiles/dsa.dir/build.make CMakeFiles/dsa.dir/src/dsf.c.s
+.PHONY : src/dsf.c.s
+
 src/graph_adjlist.o: src/graph_adjlist.c.o
 
 .PHONY : src/graph_adjlist.o
@@ -257,6 +284,60 @@ src/graph_adjm.s: src/graph_adjm.c.s
 src/graph_adjm.c.s:
 	$(MAKE) -f CMakeFiles/dsa.dir/build.make CMakeFiles/dsa.dir/src/graph_adjm.c.s
 .PHONY : src/graph_adjm.c.s
+
+src/graph_algo.o: src/graph_algo.c.o
+
+.PHONY : src/graph_algo.o
+
+# target to build an object file
+src/graph_algo.c.o:
+	$(MAKE) -f CMakeFiles/dsa.dir/build.make CMakeFiles/dsa.dir/src/graph_algo.c.o
+.PHONY : src/graph_algo.c.o
+
+src/graph_algo.i: src/graph_algo.c.i
+
+.PHONY : src/graph_algo.i
+
+# target to preprocess a source file
+src/graph_algo.c.i:
+	$(MAKE) -f CMakeFiles/dsa.dir/build.make CMakeFiles/dsa.dir/src/graph_algo.c.i
+.PHONY : src/graph_algo.c.i
+
+src/graph_algo.s: src/graph_algo.c.s
+
+.PHONY : src/graph_algo.s
+
+# target to generate assembly for a file
+src/graph_algo.c.s:
+	$(MAKE) -f CMakeFiles/dsa.dir/build.make CMakeFiles/dsa.dir/src/graph_algo.c.s
+.PHONY : src/graph_algo.c.s
+
+src/graph_krushkal.o: src/graph_krushkal.c.o
+
+.PHONY : src/graph_krushkal.o
+
+# target to build an object file
+src/graph_krushkal.c.o:
+	$(MAKE) -f CMakeFiles/dsa.dir/build.make CMakeFiles/dsa.dir/src/graph_krushkal.c.o
+.PHONY : src/graph_krushkal.c.o
+
+src/graph_krushkal.i: src/graph_krushkal.c.i
+
+.PHONY : src/graph_krushkal.i
+
+# target to preprocess a source file
+src/graph_krushkal.c.i:
+	$(MAKE) -f CMakeFiles/dsa.dir/build.make CMakeFiles/dsa.dir/src/graph_krushkal.c.i
+.PHONY : src/graph_krushkal.c.i
+
+src/graph_krushkal.s: src/graph_krushkal.c.s
+
+.PHONY : src/graph_krushkal.s
+
+# target to generate assembly for a file
+src/graph_krushkal.c.s:
+	$(MAKE) -f CMakeFiles/dsa.dir/build.make CMakeFiles/dsa.dir/src/graph_krushkal.c.s
+.PHONY : src/graph_krushkal.c.s
 
 src/graph_traversal.o: src/graph_traversal.c.o
 
@@ -519,12 +600,21 @@ help:
 	@echo "... src/common.o"
 	@echo "... src/common.i"
 	@echo "... src/common.s"
+	@echo "... src/dsf.o"
+	@echo "... src/dsf.i"
+	@echo "... src/dsf.s"
 	@echo "... src/graph_adjlist.o"
 	@echo "... src/graph_adjlist.i"
 	@echo "... src/graph_adjlist.s"
 	@echo "... src/graph_adjm.o"
 	@echo "... src/graph_adjm.i"
 	@echo "... src/graph_adjm.s"
+	@echo "... src/graph_algo.o"
+	@echo "... src/graph_algo.i"
+	@echo "... src/graph_algo.s"
+	@echo "... src/graph_krushkal.o"
+	@echo "... src/graph_krushkal.i"
+	@echo "... src/graph_krushkal.s"
 	@echo "... src/graph_traversal.o"
 	@echo "... src/graph_traversal.i"
 	@echo "... src/graph_traversal.s"
