@@ -12,7 +12,9 @@ typedef ds_size_t (*hashFunction)(const void* key, int keySize, ds_size_t seed);
 
 typedef void (*iterator)(void *);
 void display_int(void *data);
+void display_string(void *data);
 void swap_int(int *arr, int i, int j);
+void swap_char(char *arr, int i, int j);
 typedef bool (*Comparater)(void* a, void* b);
 bool less_than_int(void* a, void* b);
 bool greater_than_int(void* a, void* b);
@@ -24,5 +26,5 @@ bool greater_than_int(void* a, void* b);
 int** getmatrix_ptr(int matrix[][MAX_COUNT], int m);
 
 void display_int_arr(int *arr, int n);
-
+int* intptr(const int idata);
 #endif

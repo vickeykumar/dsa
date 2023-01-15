@@ -2,11 +2,6 @@
 #include<stdlib.h>
 #include "../include/sort.h"
 
-void swap_int(int *arr, int i, int j) {
-    int tmp=arr[i];
-    arr[i]=arr[j];
-    arr[j]=tmp;
-}
 
 /*
  * sorts the array between index low and high

@@ -1,6 +1,13 @@
 #ifndef __DSA_DSF_H
 #define __DSA_DSF_H
-
+/*
+ * disjoint set forest Data setructure
+ * Applications: 
+ * 1. merge accounts with the same email id - email id can be the key for this data structure
+ *          - https://leetcode.com/problems/accounts-merge/description/
+ * 2.
+ *
+ */
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>

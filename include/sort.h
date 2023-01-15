@@ -2,6 +2,7 @@
 #define __DSA_SORT_H
 
 #include<stdio.h>
+#include "common.h"
 
 extern void selection_sort(int *arr, int low, int high);
 /*

@@ -2,11 +2,17 @@
 #include<stdlib.h>
 #include<stdio.h>
 #include<limits.h>
+#include<string.h>
 
 
 void display_int(void *data) {
     int *i=(int*)data;
     printf("%d ", *i);    
+}
+
+void display_string(void *data) {
+    char *s=(char*)data;
+    printf("%s ", s);
 }
 
 bool less_than_int(void *a, void *b) {
@@ -32,3 +38,22 @@ void display_int_arr(int *arr, int n) {
         printf("%d ", arr[i]);
 }
 
+
+int* intptr(const int idata) {
+    int d=idata;
+    int *ptr;
+    memcpy(ptr,&d, sizeof(int));
+    return ptr;
+}
+
+void swap_int(int *arr, int i, int j) {
+    int tmp=arr[i];
+    arr[i]=arr[j];
+    arr[j]=tmp;
+}
+
+void swap_char(char *arr, int i, int j) {
+    char tmp=arr[i];
+    arr[i]=arr[j];
+    arr[j]=tmp;
+}

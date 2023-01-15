@@ -501,6 +501,33 @@ src/queue.c.s:
 	$(MAKE) -f CMakeFiles/dsa.dir/build.make CMakeFiles/dsa.dir/src/queue.c.s
 .PHONY : src/queue.c.s
 
+src/recursion.o: src/recursion.c.o
+
+.PHONY : src/recursion.o
+
+# target to build an object file
+src/recursion.c.o:
+	$(MAKE) -f CMakeFiles/dsa.dir/build.make CMakeFiles/dsa.dir/src/recursion.c.o
+.PHONY : src/recursion.c.o
+
+src/recursion.i: src/recursion.c.i
+
+.PHONY : src/recursion.i
+
+# target to preprocess a source file
+src/recursion.c.i:
+	$(MAKE) -f CMakeFiles/dsa.dir/build.make CMakeFiles/dsa.dir/src/recursion.c.i
+.PHONY : src/recursion.c.i
+
+src/recursion.s: src/recursion.c.s
+
+.PHONY : src/recursion.s
+
+# target to generate assembly for a file
+src/recursion.c.s:
+	$(MAKE) -f CMakeFiles/dsa.dir/build.make CMakeFiles/dsa.dir/src/recursion.c.s
+.PHONY : src/recursion.c.s
+
 src/search.o: src/search.c.o
 
 .PHONY : src/search.o
@@ -582,6 +609,33 @@ src/stack.c.s:
 	$(MAKE) -f CMakeFiles/dsa.dir/build.make CMakeFiles/dsa.dir/src/stack.c.s
 .PHONY : src/stack.c.s
 
+src/vector.o: src/vector.c.o
+
+.PHONY : src/vector.o
+
+# target to build an object file
+src/vector.c.o:
+	$(MAKE) -f CMakeFiles/dsa.dir/build.make CMakeFiles/dsa.dir/src/vector.c.o
+.PHONY : src/vector.c.o
+
+src/vector.i: src/vector.c.i
+
+.PHONY : src/vector.i
+
+# target to preprocess a source file
+src/vector.c.i:
+	$(MAKE) -f CMakeFiles/dsa.dir/build.make CMakeFiles/dsa.dir/src/vector.c.i
+.PHONY : src/vector.c.i
+
+src/vector.s: src/vector.c.s
+
+.PHONY : src/vector.s
+
+# target to generate assembly for a file
+src/vector.c.s:
+	$(MAKE) -f CMakeFiles/dsa.dir/build.make CMakeFiles/dsa.dir/src/vector.c.s
+.PHONY : src/vector.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -633,6 +687,9 @@ help:
 	@echo "... src/queue.o"
 	@echo "... src/queue.i"
 	@echo "... src/queue.s"
+	@echo "... src/recursion.o"
+	@echo "... src/recursion.i"
+	@echo "... src/recursion.s"
 	@echo "... src/search.o"
 	@echo "... src/search.i"
 	@echo "... src/search.s"
@@ -642,6 +699,9 @@ help:
 	@echo "... src/stack.o"
 	@echo "... src/stack.i"
 	@echo "... src/stack.s"
+	@echo "... src/vector.o"
+	@echo "... src/vector.i"
+	@echo "... src/vector.s"
 .PHONY : help
 
 
